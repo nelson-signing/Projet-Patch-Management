@@ -1,0 +1,4 @@
+﻿"Poste";"AdresseIP";"Modele";"BiosVersion";"Windows";"Architecture";"DernierDemarrage";"RAM_Go";"DisqueLibre_Go";"NbMajInstallees";"DerniereMajDate";"WindowsUpdate";"Etat"
+"PC01";"192.168.97.138";"VMware20,1";"VMW201.00V.25600138.B64.2607151225";"Microsoft Windows 10 Professionnel";"64 bits";"01/11/2026 13:48";"4";"31,67";"14";"17/10/2026";"Running";"Accessible"
+"PC02";"192.168.97.139";"VMware20,1";"VMW201.00V.25600138.B64.2607151225";"Microsoft Windows 10 Professionnel";"64 bits";"01/11/2026 13:48";"4";"31,8";"14";"17/10/2026";"Running";"Accessible"
+"PC03";"192.168.97.250";"N/A";"N/A";"N/A";"N/A";"N/A";"N/A";"N/A";"N/A";"N/A";"N/A";"Inaccessible"

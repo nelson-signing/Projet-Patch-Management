@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rapport de Securite du Parc</title>
+    <style>
+        body { font-family: Segoe UI, Tahoma, sans-serif; margin: 25px; background-color: #f7f9fa; color: #333; }
+        h1, h2 { color: #1a365d; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 30px; background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        th, td { border: 1px solid #cbd5e1; padding: 10px 12px; text-align: left; font-size: 14px; }
+        th { background-color: #0f172a; color: white; }
+        tr:nth-child(even) { background-color: #f8fafc; }
+        .conforme { color: #15803d; font-weight: bold; }
+        .non-conforme { color: #b91c1c; font-weight: bold; }
+        .inaccessible { color: #d97706; font-weight: bold; }
+        .stat-box { display: flex; gap: 15px; margin-bottom: 25px; }
+        .card { background: white; padding: 15px 20px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.08); border-left: 5px solid #0284c7; flex: 1; }
+        .card h3 { margin: 0 0 8px 0; font-size: 13px; color: #64748b; text-transform: uppercase; }
+        .card p { margin: 0; font-size: 22px; font-weight: bold; color: #0f172a; }
+    </style>
+</head>
+<body>
+    <h1>Rapport de Securite et de Conformite</h1>
+    <p>Rapport genere le : <strong>01/11/2026 16:45:01</strong></p>
+
+    <h2>Synthese globale du parc</h2>
+    <div class="stat-box">
+        <div class="card"><h3>Total Postes</h3><p>3</p></div>
+        <div class="card"><h3>Accessibles</h3><p>2</p></div>
+        <div class="card"><h3>Inaccessibles</h3><p>1</p></div>
+        <div class="card"><h3>Conformes</h3><p class="conforme">0</p></div>
+        <div class="card"><h3>Non conformes</h3><p class="non-conforme">2</p></div>
+        <div class="card"><h3>Correctifs manquants</h3><p>2</p></div>
+        <div class="card"><h3>Taux conformite</h3><p>0 %</p></div>
+    </div>
+
+    <h2>Postes necessitant une intervention prioritaire</h2>
+    <table>
+        <tr>
+            <th>Poste</th>
+            <th>Adresse IP</th>
+            <th>Etat</th>
+            <th>Service Windows Update</th>
+            <th>Motif d'intervention</th>
+        </tr>        <tr>
+            <td>PC01</td>
+            <td>192.168.97.138</td>
+            <td class="non-conforme">NON CONFORME</td>
+            <td>Stopped</td>
+            <td><strong>Correctifs manquants : KB5035845</strong></td>
+        </tr>        <tr>
+            <td>PC02</td>
+            <td>192.168.97.139</td>
+            <td class="non-conforme">NON CONFORME</td>
+            <td>Stopped</td>
+            <td><strong>Correctifs manquants : KB5035845</strong></td>
+        </tr>        <tr>
+            <td>PC03</td>
+            <td>192.168.97.250</td>
+            <td class="inaccessible">INACCESSIBLE</td>
+            <td>N/A</td>
+            <td><strong>Machine injoignable sur le reseau</strong></td>
+        </tr>    </table>
+
+    <h2>Etat detaille de tous les postes</h2>
+    <table>
+        <tr>
+            <th>Poste</th>
+            <th>IP</th>
+            <th>Accessibilite</th>
+            <th>Systeme d'exploitation</th>
+            <th>Dernier demarrage</th>
+            <th>Service Update</th>
+            <th>KB Requis</th>
+            <th>KB Manquants</th>
+            <th>Liste manquants</th>
+            <th>Etat</th>
+        </tr>        <tr>
+            <td>PC01</td>
+            <td>192.168.97.138</td>
+            <td>Accessible</td>
+            <td>Microsoft Windows 10 Professionnel (10.0.19045)</td>
+            <td>01/11/2026 13:48:15</td>
+            <td>Stopped</td>
+            <td>3</td>
+            <td>1</td>
+            <td>KB5035845</td>
+            <td class="non-conforme">NON CONFORME</td>
+        </tr>        <tr>
+            <td>PC02</td>
+            <td>192.168.97.139</td>
+            <td>Accessible</td>
+            <td>Microsoft Windows 10 Professionnel (10.0.19045)</td>
+            <td>01/11/2026 13:48:21</td>
+            <td>Stopped</td>
+            <td>3</td>
+            <td>1</td>
+            <td>KB5035845</td>
+            <td class="non-conforme">NON CONFORME</td>
+        </tr>        <tr>
+            <td>PC03</td>
+            <td>192.168.97.250</td>
+            <td>Inaccessible</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>3</td>
+            <td>-</td>
+            <td>N/A</td>
+            <td class="inaccessible">INACCESSIBLE</td>
+        </tr>    </table>
+</body>
+</html>
